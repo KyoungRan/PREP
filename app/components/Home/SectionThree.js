@@ -1,33 +1,37 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 const disaterCategory = [
-  {"category_img": "/static/images/Home/hydro.png"},
-  {"category_img": "/static/images/Home/geo.png"},
-  {"category_img": "/static/images/Home/climate.png"},
-  {"category_img": "/static/images/Home/biological.png"},
-  {"category_img": "/static/images/Home/humanmade.png"},
-  {"category_img": "/static/images/Home/circle.png"},
+  {"category_img": "/static/images/Home/home_symbol_hydro.svg"},
+  {"category_img": "/static/images/Home/home_symbol_geo.svg"},
+  {"category_img": "/static/images/Home/home_symbol_climato.svg"},
+  {"category_img": "/static/images/Home/home_symbol_bio.svg"},
+  {"category_img": "/static/images/Home/home_symbol_human.svg"},
+  {"category_img": "/static/images/Home/home_symbol_selfhelp.svg"},
 ]
 class SectionThree extends Component {
 
   renderDisasterCategory() {
     return disaterCategory.map((category, i) => {
       return (
-        <div key={i} className="col-xs-2">
-          <img className="section-three-disaster-category-img" src={category.category_img} />
-        </div>
+        <img
+          key={i}
+          className="section-three-disaster-category-img"
+          src={category.category_img}
+        />
       )
     });
   }
   render(){
     return (
-      <div className="container section-three">
-        <p className="section-three-title">Prepare NOW</p>
-        <p className="section-three-description">per Disaster Category</p>
-        <div className="row">
-          {this.renderDisasterCategory()}
+      <section className="container">
+        <div className="section-three" id="overlay-absolute">
+          <p className="section-three-title">Prepare NOW</p>
+          <p className="section-three-description">per Disaster Category</p>
+          <div className="container section-three-image-size">
+            {this.renderDisasterCategory()}
+          </div>
         </div>
-      </div>
+      </section>
     )
   }
 }

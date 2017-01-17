@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import { IndexLink, Link } from 'react-router';
-import { connect } from 'react-redux';
-import { selectCategory } from '../../actions/index';
-import { bindActionCreators } from 'redux';
+import {IndexLink, Link} from 'react-router';
+import {connect} from 'react-redux';
+import {selectCategory} from '../../actions/index';
+import {bindActionCreators} from 'redux';
 
-class Navbar extends React.Component {
+class Navbar extends Component {
   constructor() {
     super();
     this.state = {
@@ -77,7 +77,12 @@ class Navbar extends React.Component {
       //const { isSelected } = this.state.category.title;
       return (
         <li key={category.title}>
-          <Link to={category.to}>{category.parent_category}</Link>
+          <Link
+            className="navbar-category-text-disabled"
+            to={category.to}
+          >
+            {category.parent_category}
+          </Link>
         </li>
       );
     });
@@ -107,7 +112,7 @@ class Navbar extends React.Component {
       					<span className="icon-bar"></span>
       				</button>
       				<a className="navbar-brand" href="/">
-                <img src="/static/images/Home/Landing/Landing_sm_logo.svg" width="80px" height="25px" />
+                <img src="/static/images/Common/PREP_logo_white.svg" width="80px" height="25px" />
               </a>
       			</div>
       			<div id="navbar" class="navbar-collapse collapse">
