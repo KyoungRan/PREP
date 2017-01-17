@@ -50,10 +50,10 @@ const config = {
       template: './app/template/index.html'
     }),
     new CopyWebpackPlugin([{
-      from: 'public/style/images',
+      from: 'public/images',
       to: 'images'
     }, {
-      from: 'public/style/fonts',
+      from: 'public/fonts',
       to: 'fonts'
     }
   ])

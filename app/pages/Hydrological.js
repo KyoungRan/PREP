@@ -7,14 +7,14 @@ class Hydrological extends Component {
     return (
       <div>
       <div className="flood-header">
-        <img src="/static/images/Home/Flood_header.png" />
+        <img src="/static/images/Hydrological/flood_header.png" />
         <div className="flood-header-text">
           <h2 className="flood-sub-title">Hydrological</h2>
           <h1 className="flood-title">Flood</h1>
         </div>
       </div>
       <div className="flood-second">
-        <img src="/static/images/Home/flood-landing.png" />
+        <img src="/static/images/Hydrological/flood_landing.png" />
       </div>
       <StayInformed />
       </div>

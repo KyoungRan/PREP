@@ -1,19 +1,23 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 const disaterCategory = [
-  {"category_img": "/static/images/Home/Symbol_Hydro.png"},
-  {"category_img": "/static/images/Home/Symbol_Geo.png"},
-  {"category_img": "/static/images/Home/Symbol_Climato.png"},
-  {"category_img": "/static/images/Home/Symbol_Bio.png"},
-  {"category_img": "/static/images/Home/Symbol_Human.png"},
-  {"category_img": "/static/images/Home/Symbol_Human.png"},
+  {"category_img": "/static/images/Home/home_symbol_hydro.svg"},
+  {"category_img": "/static/images/Home/home_symbol_geo.svg"},
+  {"category_img": "/static/images/Home/home_symbol_climato.svg"},
+  {"category_img": "/static/images/Home/home_symbol_bio.svg"},
+  {"category_img": "/static/images/Home/home_symbol_human.svg"},
+  {"category_img": "/static/images/Home/home_symbol_selfhelp.svg"},
 ]
 class SectionThree extends Component {
 
   renderDisasterCategory() {
     return disaterCategory.map((category, i) => {
       return (
-        <img key={i} className="section-three-disaster-category-img" src={category.category_img} />
+        <img
+          key={i}
+          className="section-three-disaster-category-img"
+          src={category.category_img}
+        />
       )
     });
   }
