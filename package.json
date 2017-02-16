@@ -11,17 +11,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WeRAwesome/PREP.git"
+    "url": "git+https://github.com/KyoungRan/PREP.git"
   },
   "keywords": [
     "prep"
   ],
   "author": "Kyoungran Kang (kyoungrankang@gmail.com)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/WeRAwesome/PREP/issues"
+    "url": "https://github.com/KyoungRan/PREP/issues"
   },
-  "homepage": "https://github.com/WeRAwesome/PREP#readme",
+  "homepage": "https://github.com/KyoungRan/PREP#readme",
   "dependencies": {
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
